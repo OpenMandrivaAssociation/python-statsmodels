@@ -22,7 +22,7 @@ Requires:	python-numpy >= 1.4.0
 Requires:	python-scipy >= 0.7.0
 Requires:	python-pandas >= 0.7.1
 BuildRequires:	python-devel, python-setuptools
-BuildRequires:	python-sphinx, python-matplotlib
+BuildRequires:	python-sphinx, python-matplotlib, python-numpy-devel >= 1.4.0
 
 %description
 Statsmodels is a Python module that allows users to explore data,
