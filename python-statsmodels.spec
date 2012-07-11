@@ -49,11 +49,19 @@ analysis in Python.
 %__rm -rf %{buildroot}
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 
+# Copy datasets into build directory tree to use when building docs:
+pushd statsmodels
+export PYTHONPATH=`ls -d ../build/lib* | head -1`
+for f in `find . -name *.csv`; do \
+cp --parents $f $PYTHONPATH/statsmodels/; \
+done
+popd
+
 pushd docs
-PYTHONPATH=`ls -d ../build/lib* | head -1`
 chmod u+x ../tools/*.py
 make html
 popd
+
 find docs -name .buildinfo -exec rm -rf {} \;
 
 %clean
