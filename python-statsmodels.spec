@@ -14,6 +14,7 @@ Version:	%{version}
 Release:	%{release}
 Source0:	http://pypi.python.org/packages/source/s/%{module}/%{module}-%{version}.tar.gz
 Patch0:		setup-lm-0.4.3.patch
+Patch1:		build-doc-0.4.3.patch
 License:	BSD
 Group:		Development/Python
 Url:		http://statsmodels.sourceforge.net/
@@ -39,6 +40,7 @@ analysis in Python.
 %prep
 %setup -q -n %{module}-%{version}
 %patch0 -p0
+%patch1 -p0
 
 %build
 %__python setup.py build 
