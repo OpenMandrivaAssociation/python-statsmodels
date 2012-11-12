@@ -1,0 +1,10 @@
+--- statsmodels/tsa/kalmanf/setup.py.bak	2012-07-09 13:21:26.499994572 -0400
++++ statsmodels/tsa/kalmanf/setup.py	2012-07-09 13:21:50.437848972 -0400
+@@ -24,6 +24,7 @@
+ 
+         config.add_extension('kalman_loglike',
+                          sources=['kalman_loglike.c'],
++                         libraries=['m'],
+                          include_dirs=[get_numpy_include_dirs()])
+ 
+     return config

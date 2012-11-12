@@ -1,0 +1,11 @@
+--- tools/examples_rst.py.bak	2012-07-11 14:23:45.976285528 -0400
++++ tools/examples_rst.py	2012-07-11 14:23:54.261230063 -0400
+@@ -8,7 +8,7 @@
+ from StringIO import StringIO
+ 
+ # 3rd party
+-from matplotlib import pyplot as plt
++#from matplotlib import pyplot as plt
+ 
+ # Ours
+ import hash_funcs
