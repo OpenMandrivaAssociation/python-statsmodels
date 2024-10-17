@@ -17,7 +17,7 @@ Patch0:		setup-lm-0.4.3.patch
 Patch1:		build-doc-0.4.3.patch
 License:	BSD
 Group:		Development/Python
-Url:		http://statsmodels.sourceforge.net/
+Url:		https://statsmodels.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	python-numpy >= 1.4.0
 Requires:	python-scipy >= 0.7.0
