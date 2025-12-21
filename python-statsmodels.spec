@@ -22,6 +22,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	python-numpy >= 1.4.0
 Requires:	python-scipy >= 0.7.0
 Requires:	python-pandas >= 0.7.1
+BuildRequires:	make
 BuildRequires:	python-devel, python-setuptools
 BuildRequires:	python-sphinx, python-matplotlib
 BuildRequires:	python-numpy-devel >= 1.4.0
