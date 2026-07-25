@@ -3,9 +3,9 @@
 %define version 0.4.3
 %define	rel	1
 %if %mdkversion < 201100
-%define release %mkrel %{rel}
+%define release %{rel}.1
 %else
-%define	release	%{rel}
+%define	release %{rel}.1
 %endif
 
 Summary:	Statistical computations and models for use with SciPy
